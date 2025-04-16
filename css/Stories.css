@@ -1,0 +1,142 @@
+.stories-main {
+    padding-top: 80px;
+}
+
+.stories-hero {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/children-gaza.jpg');  /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 115, 69, 0.8); /* Olive green overlay */
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.stories-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stories-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.stories-grid {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.story-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-content {
+    padding: 2rem;
+}
+
+.story-content h2 {
+    color: #5C7345;
+    margin-bottom: 0.5rem;
+}
+
+.age {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.story-text {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.coping-strategy {
+    background: #f8f9f3;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.coping-strategy h3 {
+    color: #5C7345;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.support-resources {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.help-list {
+    list-style: none;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.help-list li {
+    background: #f8f9f3;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #5C7345;
+}
+
+.stories-footer {
+    background: #f8f9f3;
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .stories-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+}
